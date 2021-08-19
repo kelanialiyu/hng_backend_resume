@@ -1,0 +1,392 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"Lucida Sans Unicode", "Trebuchet MS", Tahoma, Geneva, Helvetica, sans-serif;
+	font-size:100%;
+	line-height: 1rem
+}
+body{
+	background-color:#cecece;
+	color:#222;
+}
+main{
+	width:95vw;
+	margin:0 auto;
+	background-color:#fff;
+	padding: 0;
+}
+h2{
+	text-transform:uppercase;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color:#313c4e;
+	font-weight: 700;
+	margin:0.125rem 0;
+}
+
+.personal-info{
+	height:47vh;
+	padding:0.625rem;
+	display: inline-flex;
+	vertical-align: middle;
+	letter-spacing: 0.0625px;
+	margin: 1vh 1vh;
+}
+.personal-info img{
+	border-radius: 9vh;
+	width:18vh;
+	height:18vh;
+	margin:auto 1vh;
+}
+.personal-info div{
+	margin:auto;
+	text-align: justify-all;
+	padding-right: 1.25rem;
+
+}
+.personal-info h3{
+	padding:1vh;
+	font-size:1.35rem;
+	font-stretch:ultra-condensed;
+	font-weight: 500;
+}
+.personal-info h4{
+	padding:1vh;
+	color: #313c4e;
+	font-size: 1.2rem;
+	font-stretch: ultra-condensed;
+	font-weight: 300;
+}
+.personal-info p{
+	padding:1vh;
+	font-size: 1rem;
+	text-shadow: 0.0625rem 0rem 0.125rem lightgray;
+}
+.contact-information, .hng-information{
+	background-color: #313c4e;
+	color: #fff;
+	padding:0.625rem;
+	vertical-align: middle;
+}
+.contact-information a, .hng-information a{
+	color:#fff;
+	font-size:1rem;
+	line-height: 1.25rem;
+	margin: 0.65rem 0.5rem;
+	width:calc(100% - 2rem);
+	display:inline-block;
+	position: relative;
+	text-decoration: none;
+}
+.contact-information a:hover, .hng-information a:hover{
+	text-decoration: underline;
+}
+.contact-information a:focus, .hng-information a:focus{
+	color:grey;
+}
+
+.contact-information span, .hng-information span{
+	color:grey;
+}
+.icon{
+	position: relative;
+	top: 0.0625rem;
+	display:inline-block;
+	height:0.9rem;
+	width: 1.25rem;
+	margin: auto 0.125rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #313c4e;
+}
+.hng-information .icon{
+	background-color: transparent;
+}
+.hng-information h2{
+	margin-left: 0.65rem;
+	color:#fff;
+}
+.icon-email{
+	background-image: url("../img/envelope.png");
+}
+.icon-phone{
+	background-image: url("../img/iphone.png");
+}
+.icon-location{
+	background-image: url("../img/location.png");
+}
+.icon-github{
+	background-image: url("../img/social-github.png");
+}
+.icon-twitter{
+	background-image: url("../img/social-twitter.png");
+}
+.icon-linkedin{
+	background-image: url("../img/social-linkedin.png");
+}
+
+/*competence classes*/
+.competence{
+	margin:0.25rem;
+	display:inline-flex;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+.education, .skills,
+.work-experience,.personal-project,
+.organizations,.certificates,
+.languages,.interests{
+	margin:0 0.625rem;
+	width:calc(100% - 2.5rem);
+	height: auto;
+}
+.competence h2{
+	text-transform: uppercase;
+	margin:0;
+	font-size: 1.5rem;
+	line-height: 2;
+}
+
+.competence h3{
+	font-size: 1.25rem;
+	line-height: 2rem;
+	display: list-item;
+	list-style-image: url("../img/android-remove.png");
+	list-style-position: outside;
+
+}
+.competence h4{
+	font-size: 1.15rem;
+	line-height: 1.3rem;
+	font-weight: normal;
+}
+.competence li{
+	list-style: none;
+}
+
+.date, .address{
+	font-style: italic;
+	font-size:0.75rem;
+	line-height: 1rem;
+	color: #313c4e;
+	display: inline;
+}
+.address{
+	float:right;
+	margin-right: 0.1rem
+}
+.courses > p, .task >p, .organization-desciption,.org .role, .proficiency{
+	font-style: italic;
+	font-size:0.9rem;
+	line-height: 1.2rem;
+	color: #313c4e;
+}
+
+.courses li, .task li{
+	list-style-type: circle;
+	list-style-position: outside;
+	font-size:.9rem;
+	line-height: 1.2rem;
+	margin-left: 1rem;
+}
+.organization-desciption,.org .role,.proficiency{
+	color: rgb(102,102,102);
+	font-size: .8rem;
+}
+
+.skills p{
+	font-size: 0.95rem;
+	display:inline-block;
+	margin:0.3rem;
+	height: 1rem;
+	padding: 0.5rem;
+	line-height: 1rem;
+	border-radius: 0.2rem;
+	background-color: rgb(102,102,102);
+	color: #ddd;
+}
+.personal-project li{
+	margin-bottom:1.25rem;
+}
+.name,.duration{
+	font-size:.9rem;
+	line-height: 1.4rem;
+	text-shadow: 0.0625rem 0rem 0.125rem #ccc;
+}
+.personal-project .description{
+	display: list-item;
+	list-style-type: circle;
+	list-style-position: outside;
+	font-size:0.9rem;
+	line-height: 1.1rem;
+	margin-left: 0.9rem;
+}
+.languages ul{
+	display:flex;
+	flex-flow: wrap;
+}
+.languages li {
+	width:calc(50% - 1rem);
+	margin-bottom:0.5rem;
+	margin-right: 0.5rem;
+}
+.lang .title{
+	text-transform: capitalize;
+}
+
+.interests li{
+	display:inline-block;
+	margin:0.3rem;
+	height: 1rem;
+	padding: 0.5rem;
+	line-height: 1rem;
+	border-radius: 0.2rem;
+	border: 2px solid lightgray;
+	border-style: groove;
+}
+
+@media screen and (min-width: 724px){
+	main{
+		width:85vw;
+	}
+	h2{
+		font-size: 1.5rem;
+		line-height: 2rem;
+		margin:0.125rem 0;
+	}
+
+	.personal-info{
+		height:30vh;
+		padding:0.625rem;
+		letter-spacing: 0.0625px;
+		margin: 1vh 2vh;
+	}
+	.personal-info img{
+		border-radius: 12vh;
+		width:24vh;
+		height:24vh;
+		margin:auto 2vh;
+	}
+	.personal-info div{
+		margin:auto 2vh;
+		padding-right: 1.25rem;
+
+	}
+	.personal-info h3{
+		padding:2vh;
+		font-size:2rem;
+	}
+	.personal-info h4{
+		padding:2vh;
+		font-size: 1.375rem;
+	}
+	.personal-info p{
+		padding:2vh;
+		font-size: 1rem;
+	}
+	.contact-information, .hng-information{
+		padding:0.625rem;
+	}
+	.contact-information a, .hng-information a{
+		font-size:1rem;
+		line-height: 1.25rem;
+		margin: 0.625rem;
+		width:calc(50% - 2.5rem);
+	}
+	.hng-information h2{
+		margin-left: 0.625rem;
+		color:#fff;
+	}
+	/*competence classes*/
+	.competence{
+		margin:0.625rem;
+		display:block;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		-webkit-column-gap: 0;
+		-moz-column-gap: 0;
+		column-gap: 0;
+	}
+	.education, .skills,
+	.work-experience,.personal-project,
+	.organizations,.certificates,
+	.languages,.interests{
+		margin:0 0.625rem;
+		width:calc(100% - 2.5rem);
+	}
+	.competence h2, .hng-information{
+		margin:0;
+		font-size: 1.7rem;
+		line-height: 3.4rem;
+	}
+	.competence h3{
+		font-size: 1.3rem;
+		line-height: 2rem;
+	}
+
+	.competence h4{
+		font-size: 1.3rem;
+		line-height: 1.6rem;
+	}
+	.date, .address{
+		font-size:0.8rem;
+		line-height: 1.2rem;
+	}
+	.address{
+		margin-right: 0.1rem
+	}
+	.courses > p, .task >p, .organization-desciption,.org .role, .proficiency{
+		font-size:0.9rem;
+		line-height: 1.2rem;
+	}
+
+	.courses li, .task li{
+		font-size:1rem;
+		line-height: 1.2rem;
+		margin-left: 1rem;
+	}
+	.organization-desciption,.org .role,.proficiency{
+		font-size: 0.8rem;
+	}
+
+	.skills p{
+		margin:0.3rem;
+		height: 1rem;
+		padding: 0.5rem;
+		line-height: 1rem;
+		border-radius: 0.2rem;
+	}
+	.personal-project li{
+		margin-bottom:1.25rem;
+	}
+	.name,.duration{
+		font-size:1.1rem;
+		line-height: 1.4rem;
+	}
+	.personal-project .description{
+		font-size:0.9rem;
+		line-height: 1.1rem;
+		margin-left: 0.9rem;
+	}
+	.languages li {
+		width:calc(50% - 1rem);
+		margin-bottom:0.5rem;
+		margin-right: 0.5rem;
+	}
+
+	.interests li{
+		margin:0.3rem;
+		height: 1rem;
+		padding: 0.5rem;
+		line-height: 1rem;
+		border-radius: 0.2rem;
+	}
+}
+@media screen and (min-width: 1024px){
+	main{
+		width:75vw;
+	}
+
+}
