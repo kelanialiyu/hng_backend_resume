@@ -97,11 +97,13 @@ h2{
 	margin: auto 0.125rem;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	background-color: #313c4e;
 }
 .hng-information .icon{
-	background-color: transparent;
+	background-color: white;
+	width:5rem;
+	height:1.2rem
 }
 .hng-information h2{
 	margin-left: 0.65rem;
@@ -125,7 +127,21 @@ h2{
 .icon-linkedin{
 	background-image: url("../img/social-linkedin.png");
 }
-
+.icon-hng{
+	background-image: url("../img/hng.png");
+}
+.icon-ingressive{
+	background-image: url("../img/ingressive.png");
+}
+.icon-zuri-training{
+	background-image: url("../img/zuri_training.svg");
+}
+.icon-zuri-internship{
+	background-image: url("../img/zuri_internship.svg");
+}
+.icon-zuri{
+	background-image: url("../img/zuri_team.svg");
+}
 /*competence classes*/
 .competence{
 	margin:0.25rem;
