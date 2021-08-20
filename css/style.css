@@ -36,7 +36,7 @@ h2{
 	border-radius: 9vh;
 	width:18vh;
 	height:18vh;
-	margin:auto 1vh;
+	margin:auto;
 }
 .personal-info div{
 	margin:auto;
@@ -61,6 +61,14 @@ h2{
 	padding:1vh;
 	font-size: 1rem;
 	text-shadow: 0.0625rem 0rem 0.125rem lightgray;
+}
+.personal-info .contact-me button{
+	display:block;
+	width:16vh;
+	font-size:.8rem;
+	margin:.5vh auto;
+	text-align: center;
+	padding: .2vh;
 }
 .contact-information, .hng-information{
 	background-color: #313c4e;
@@ -262,6 +270,133 @@ h2{
 	border-style: groove;
 }
 
+/* form styling */
+.checkout{
+    background-color:#262e3b;
+    width:95vw;
+    height:75vh;
+    margin: 5vh 2.5vw;
+    position:fixed;
+    top:0;
+    opacity:0;
+    overflow: scroll;
+    z-index:-1;
+}
+
+.checkout-disappear{
+    animation-name: shrink;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+.checkout-reappear{
+    animation-name: unshrink;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+.checkout-items{
+    width:98%;
+    margin:1.6vh 1%;
+    margin-bottom:1vh;
+    /* background-color:silver; test */
+}
+.checkout-form{
+    width:90%;
+    padding:2vh 5%;
+    margin-top: 1vh;
+    /* background-color: yellow; testing */
+    position: relative;
+}
+.checkout h2{
+	color:white;
+	margin-bottom: 2vh;
+	margin-left: 1%;
+}
+form input,textarea{
+    height:2rem;
+    margin:1.5vh auto;
+    width:95%;
+    display:inline-block;
+    border:none;
+    outline:none;
+    font-size:1rem;
+    background-color: #cecece;
+    border-bottom: rgb(54, 54, 54) groove 1px;
+	color:#222;
+	padding: 0;
+}
+
+.message{
+	height: 20vh;
+	border:none;
+	border-bottom: rgb(54, 54, 54) groove 1px;
+	border-right: rgb(54, 54, 54) groove 1px;
+}
+.input-error{
+    border-bottom-color:rgb(230, 34, 16);
+}
+.error-message{
+    display:hidden;
+    color:rgb(230, 34, 16);
+    font-size:0.7rem;
+    margin-left: .25rem;
+    margin-bottom:.25rem;
+    font-weight: bold;
+    opacity: 0.9;
+}
+.checkout-form div p{
+    text-align:center;
+    margin-bottom:2vh;
+}
+.danger{
+	color:rgb(163, 18, 18);
+}
+.success{
+	color:rgb(68, 161, 68);
+}
+.show{
+	display:block;
+}
+.hide{
+	display:none;
+}
+.button{
+    display:flex;
+    justify-content: center;
+}
+button[type]{
+    margin:0.25rem;
+    display:inline-block;
+    color:#ccc;
+    background-color: #313c4e;
+    width:calc(45% - .5rem);
+    height:2.5rem;
+    border:none;
+    border-radius:0;
+
+}
+button[type]:active{
+    background-color: #333;
+}
+
+/* checkout animation */
+@keyframes shrink{
+    from{
+        opacity: 1;}
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes unshrink{
+     from{
+        opacity: 0;}
+    to{
+        opacity: 1;
+    }
+}
+
 @media screen and (min-width: 724px){
 	main{
 		width:85vw;
@@ -283,6 +418,14 @@ h2{
 		width:24vh;
 		height:24vh;
 		margin:auto 2vh;
+	}
+	.personal-info .contact-me button{
+		width:24vh;
+		font-size:1rem;
+		margin:1vh auto;
+		text-align: center;
+		padding: .3vh;
+		height:2rem;
 	}
 	.personal-info div{
 		margin:auto 2vh;
@@ -399,6 +542,45 @@ h2{
 		line-height: 1rem;
 		border-radius: 0.2rem;
 	}
+	/* checkout styling */
+    .checkout{
+        width:60vw;
+        height:75vh;
+        margin: 10vh 20vw;
+    }
+    .checkout-items{
+        margin:0vh 0;
+        margin-bottom: 1.5vh;
+    }
+    .checkout-form{
+        width:70%;
+        margin:2vh auto;
+        margin-top:1.5vh;
+    }
+    form input, textarea{
+        height:2.3rem;
+        width:95%;
+		margin:1.8vh auto;
+    }
+    .error-message{
+        font-size:0.75rem;
+        margin-bottom:1vh;
+        margin-left: .65rem;
+    }
+    .button{
+        justify-content: flex-end;
+    }
+    button[type]{
+        margin:1.9vh 2vw;
+		margin-bottom: 0;
+        width:20%;
+        height:2.4rem;
+    }
+	.checkout-form div p{
+        margin-bottom:.5vh;
+    }
+
+	
 }
 @media screen and (min-width: 1024px){
 	main{

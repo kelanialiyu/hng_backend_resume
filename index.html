@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Kelani Aliyu Portfolio</title>
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	  <meta name="description" content="My HNG Resume assessment">
+	  <meta name="description" content="My HNG Resume Backend assessment">
 	  <meta name="Author" content="Kelani Aliyu">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,11 +12,18 @@
 <body>
 	<main>
 		<div class="personal-info">
+			<div>
 				<img src="img/pic.jpeg" alt="profile picture" width="150rem">
+				<div class="contact-me">
+					<button type="button" class="msg-button">Message Me</button>
+				</div>
+			</div>
+				
 			<div>
 				<h3>Kelani Aliyu</h3>
 				<h4>Computer Scientist</h4>
 				<p>Am a driven tech enthusiast and programmer who loves solving problems, learning new skills and obsessed with STEM</p>
+				
 			</div>
 			
 		</div>
@@ -225,5 +232,28 @@
 			<a href="https://wwww.ingressive.org"><span class="icon icon-ingressive"></span>Ingressive For Good</a>
 		</div>
 	</main>
+	<div class="checkout loaded">
+
+		<div class="checkout-form">
+			<h2>Contact Us</h2>
+			<form action="#" method="POST">
+				<div>
+					<p class="hide"></p>
+				</div>
+				<input type="text" name="name" id="name" class="name" placeholder="Your Name" aria-placeholder="Your Email">
+				<small class="error-message name"></small>
+				<input type="email" name="email" id="email" class="email" placeholder="Your Email"
+					aria-placeholder="Your Email">
+				<small class="error-message email"></small>
+				<textarea name="message" class="message" id="message" placeholder="Message"
+					aria-placeholder="your message" rows="4"></textarea>
+				<small class="error-message msg"></small>
+				<div class="button">
+					<button type="submit" value="">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>
