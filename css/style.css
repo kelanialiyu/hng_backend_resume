@@ -33,15 +33,15 @@ h2{
 	margin: 1vh 1vh;
 }
 .personal-info img{
-	border-radius: 9vh;
-	width:18vh;
-	height:18vh;
+	border-radius: 9.5vw;
+	width:19vw;
+	height:19vw;
 	margin:auto;
 }
 .personal-info div{
 	margin:auto;
 	text-align: justify-all;
-	padding-right: 1.25rem;
+	padding-right: .8rem;
 
 }
 .personal-info h3{
@@ -58,8 +58,8 @@ h2{
 	font-weight: 300;
 }
 .personal-info p{
-	padding:1vh;
-	font-size: 1rem;
+	padding:.1vw;
+	font-size: .75rem;
 	text-shadow: 0.0625rem 0rem 0.125rem lightgray;
 }
 .personal-info .contact-me button{
@@ -168,7 +168,7 @@ h2{
 .competence h2{
 	text-transform: uppercase;
 	margin:0;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	line-height: 2;
 }
 
@@ -441,8 +441,8 @@ button[type]:active{
 		font-size: 1.375rem;
 	}
 	.personal-info p{
-		padding:2vh;
-		font-size: 1rem;
+		padding:1.5vh;
+		font-size: .9rem;
 	}
 	.contact-information, .hng-information{
 		padding:0.625rem;
@@ -585,6 +585,10 @@ button[type]:active{
 @media screen and (min-width: 1024px){
 	main{
 		width:75vw;
+	}
+	.personal-info p{
+		padding:2vh;
+		font-size: 1rem;
 	}
 
 }
